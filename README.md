@@ -11,7 +11,7 @@ The purpose of this project is to create a Logo Maker that generates an SVG file
 - Ensure once all prompts answered, logo.svg file is created
 
 ## Node Application Preview
-![Application Screenshot 1](images/readme-application-1.png)
+![Application Screenshot 1](images/svg-logo-maker-1.png)
 
 ## Submission Requirements
 <!-- TODO: Edit Video Walkthrough Link -->
