@@ -5,9 +5,9 @@ describe('classTriangle', () => {
         const triangle = new Triangle('ABC', 'white','blue');
         expect(triangle.render()).toEqual(`
         <svg width="300" height="200">
-            <polygon points="150, 18 244, 182 56, 182" fill="${this.shapeColor}"/>
-            <text x="150" y="150" font-size="50" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
+            <polygon points="150, 18 244, 182 56, 182" fill="blue"/>
+            <text x="150" y="150" font-size="50" text-anchor="middle" fill="white">ABC</text>
         </svg>
         `);
-    })
-})
+    });
+});
