@@ -1,6 +1,7 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateSVG = require('./lib/shapes');
 
 // Create an array of questions for user input
 const questions = [
@@ -31,8 +32,18 @@ const questions = [
     }           
 ];
 
-// TODO: Create a function to write svg file
+// Create a function to write svg file
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data);
+}
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then((data => writeToFile('./logo.svg', generateSVG(data))))
+    .then(() => console.log('Successfully created logo.svg'))
+    .catch((err) => console.error(err));
+}
 
-// TODO: Function call to initialize app
+// Function call to initialize app
+init();
