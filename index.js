@@ -7,13 +7,13 @@ const generateSVG = require('./lib/shapes');
 const questions = [
     {
         type: 'input',
-        name: 'title',
+        name: 'text',
         message: 'Please provide 3 characters for your logo:'
         // Sample Input: SVG
     },
     {
         type: 'list',
-        name: 'logoShape',
+        name: 'shape',
         message: 'Please select the desired shape of your logo:',
         choices: ['circle', 'triangle', 'square']
         // Sample Input: circle
@@ -21,15 +21,15 @@ const questions = [
     {
         type: 'input',
         name: 'textColor',
-        message: 'Please provide desired color keyword/hexadecimal (excl #) for text:'
+        message: 'Please provide desired color keyword/hexadecimal for text:'
         // Sample Input: white/FFFFFF
     },
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'Please provide desired color keyword/hexadecimal (excl #) for your shape:'
+        message: 'Please provide desired color keyword/hexadecimal for your shape:'
         // Sample Input: purple/800080
-    }           
+    }          
 ];
 
 // Create a function to write svg file
