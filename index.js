@@ -8,7 +8,14 @@ const questions = [
     {
         type: 'input',
         name: 'text',
-        message: 'Please provide 3 characters for your logo:'
+        message: 'Please provide up to 3 characters for your logo:',
+        validate: response => {
+            if(response.length < 4) {
+                return true
+            } else {
+                console.log("\n Text must be no greater than 3 characters! Try again.")
+            }
+        }
         // Sample Input: SVG
     },
     {
@@ -41,7 +48,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((data => writeToFile('./logo.svg', generateSVG(data))))
-    .then(() => console.log('Successfully created logo.svg'))
+    .then(() => console.log('Generated logo.svg!'))
     .catch((err) => console.error(err));
 }
 
