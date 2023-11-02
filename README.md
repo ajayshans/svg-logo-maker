@@ -14,7 +14,6 @@ The purpose of this project is to create a Logo Maker that generates an SVG file
 ![Application Screenshot 1](images/svg-logo-maker-1.png)
 
 ## Submission Requirements
-<!-- TODO: Edit Video Walkthrough Link -->
 - [Video Walkthrough](https://drive.google.com/file/d/1aZ-6l4wSP4EAwRjEyxbZfWnp6mxItWTY/view)
 - [Sample logo.svg](https://github.com/ajayshans/svg-logo-maker/blob/main/logo.svg)
 - [GitHub Repo](https://github.com/ajayshans/svg-logo-maker)
